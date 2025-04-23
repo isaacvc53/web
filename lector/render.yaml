@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: lector
+    env: java
+    buildCommand: "./mvnw clean install"
+    startCommand: "java -jar target/lector-0.0.1-SNAPSHOT.jar"
+    branch: main
+    autoDeploy: true
